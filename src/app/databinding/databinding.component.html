@@ -1,0 +1,23 @@
+<h1>String interpolation</	h1>
+<p>
+  databinding works!
+  {{stringInterpolation}}	
+  {{numberInterpolation}}
+</p>
+<hr>
+<h1>Property binding</h1>
+<input type="text" value="{{stringInterpolation}}" >
+<hr>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{redBorder: onTest()}">is this styled?</p>	
+<p [ngStyle]="{color: 'green'}">is this styled?</p>	
+<hr>
+<h3>Custom Property Binding  </h3>
+<fa-property-binding [result]="10"> </fa-property-binding>
+<hr>
+<h3>Event Binding!!!! xdxdxd</h3>
+<fa-event-binding (clickable)="onClicked($event)"> </fa-event-binding> 
+<!--arriba dice clickable porque se cambio el output en property-binding  de clicked-->
+<hr>
+<h1>Two-Way-Binding</h1>
+<fa-two-way-binding></fa-two-way-binding>
